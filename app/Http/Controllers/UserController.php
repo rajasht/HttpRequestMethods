@@ -8,6 +8,8 @@ class UserController extends Controller
 {
     //
     public function testHttpRequest(Request $req){
-        return $req->input();
+        // return $req->input();
+        $data = $req->input();
+        return $data;
     }
 }

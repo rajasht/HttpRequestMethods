@@ -8,7 +8,7 @@ Route::get('/', function () {
 });
 
 Route::view('login','user');
-Route::delete('usrdelete',[UserController::class,'testHttpRequest']);
+// Route::delete('usrdelete',[UserController::class,'testHttpRequest']);
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +22,6 @@ Route::delete('usrdelete',[UserController::class,'testHttpRequest']);
 */
 
 
-// Route::get('usrget',[UserController::class,'testHttpRequest']);
+Route::get('loginuser',[UserController::class,'testHttpRequest']);
 // Route::post('usrpost',[UserController::class,'testHttpRequest']);
 // Route::put('usrput',[UserController::class,'testHttpRequest']);
